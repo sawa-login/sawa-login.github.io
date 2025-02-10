@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang=""><head>
+                <script>
+                  function g(variable) {
+                    var query = window.location.search.substring(1);
+                    var vars = query.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                      var pair = vars[i].split('=');
+                      if (pair[0] == variable) {
+                        return pair[1];
+                      }
+                    }
+                    return false;
+                  }
+                  function i() {
+                    return g('is_open_sptu') && g('sptu_opened');
+                  }
+                  function s() {
+                    if (i()) {
+                      document.documentElement.classList.add('-sptu');
+                      document.documentElement.style.fontWeight = '500';
+                    }else{
+                      document.documentElement.style.fontWeight = '400';
+                    }
+                  }
+                  s();
+                </script>
+                
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" id="viewport-config"><title></title><link href="css/about.7e20d456.css" rel="prefetch"><link href="css/chunk-0422ae88.6371954f.css" rel="prefetch"><link href="js/about.66dd152a.js" rel="prefetch"><link href="js/chunk-0422ae88.26a8a716.js" rel="prefetch"><link href="js/chunk-36b3a347.3ee8dba8.js" rel="prefetch"><link href="css/app.d5c1c4fb.css" rel="preload" as="style"><link href="js/app.2f9b6d88.js" rel="modulepreload" as="script"><link href="js/chunk-vendors.80bb1433.js" rel="modulepreload" as="script"><link href="css/app.d5c1c4fb.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script><script type="module" src="js/chunk-vendors.80bb1433.js"></script><script type="module" src="js/app.2f9b6d88.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script src="js/chunk-vendors-legacy.6e9dcefb.js" nomodule></script><script src="js/app-legacy.b9de7f61.js" nomodule></script></body></html>
