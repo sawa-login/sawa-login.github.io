@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang=""><head>
+                <script>
+                  function g(variable) {
+                    var query = window.location.search.substring(1);
+                    var vars = query.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                      var pair = vars[i].split('=');
+                      if (pair[0] == variable) {
+                        return pair[1];
+                      }
+                    }
+                    return false;
+                  }
+                  function i() {
+                    return g('is_open_sptu') && g('sptu_opened');
+                  }
+                  function s() {
+                    if (i()) {
+                      document.documentElement.classList.add('-sptu');
+                      document.documentElement.style.fontWeight = '500';
+                    }else{
+                      document.documentElement.style.fontWeight = '400';
+                    }
+                  }
+                  s();
+                </script>
+                
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" id="viewport-config"><title>Sawa</title><style>.pre-render-login-c {
+        display: none;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      .-pre-render-ludo .pre-render-login-c {
+        display: none;
+      }
+      .pre-render-banner {
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vw;
+        background-size: contain;
+        background-position: top;
+        position: absolute;
+        background-image: url(img/banner_recall_1.8bfd4e8f.png);
+        left: 0;
+        z-index: 0;
+        top: 0;
+      }
+      .-pre-render-min .pre-render-sawa-logo {
+        margin-top: 22px;
+      }
+
+      .-pre-render-min.-pre-render-min2 .pre-render-sawa-logo {
+        width: 160px;
+        height: 48px;
+      }
+      .pre-render-sawa-logo {
+        width: 200px;
+        height: 60px;
+        background-image: url(img/banner_logo.6b962b20.png);
+        background-size: 100% 100%;
+        margin: auto;
+        margin-top: 24px;
+        position: relative;
+        z-index: 1;
+      }
+      .pre-render-message {
+        text-align: center;
+        font-family: Arabic Content;
+        font-size: 12px;
+        height: 34px;
+        line-height: 17px;
+        color: #333;
+        margin: auto;
+        margin-top: 20px;
+        max-width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pre-render-login-cc {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+      }
+      .pre-render-btn {
+        width: calc(100% - 64px);
+        max-width: 100%;
+        height: 44px;
+        border-radius: 22px;
+        background: #fff;
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: TajawalZii;
+        font-size: 20px;
+
+        border: 1px solid #e5e5e5;
+        margin-top: 17px;
+        color: #464646;
+        font-size: 17px;
+      }
+      .pre-render-btn.apple-btn {
+        border: 1px solid #000;
+        color: #000;
+        font-size: 19px;
+      }
+      .-pre-render-min .pre-render-message {
+        margin-top: 16px;
+      }
+      .-pre-render-min.-pre-render-min2 .pre-render-message {
+        margin-top: 8px;
+      }
+      .-pre-render-min2 .pre-render-btn {
+        margin-top: 10px;
+      }</style><script>function getQueryVariable(variable) {
+        function parseParams(paramString) {
+          const vars = paramString.split('&')
+          for (let i = 0; i < vars.length; i++) {
+            const pair = vars[i].split('=')
+            if (decodeURIComponent(pair[0]) === variable) {
+              return decodeURIComponent(pair[1] || '')
+            }
+          }
+          return null
+        }
+
+        const search = window.location.search.substring(1)
+        let result = parseParams(search)
+        if (result !== null) return result
+
+        const hashIndex = window.location.hash.indexOf('?')
+        const hashQuery =
+          hashIndex >= 0
+            ? window.location.hash.substring(hashIndex + 1)
+            : window.location.hash.startsWith('#')
+            ? window.location.hash.substring(1)
+            : ''
+
+        return parseParams(hashQuery)
+      }
+
+      function isOverWH(t) {
+        return window.innerWidth / window.innerHeight > t
+      }</script><link href="css/about.86e649df.css" rel="prefetch"><link href="css/chunk-380f6b67.762af0c7.css" rel="prefetch"><link href="css/chunk-9fe5b1fa.169f0046.css" rel="prefetch"><link href="js/about.3314dcfd.js" rel="prefetch"><link href="js/chunk-073b5fa9.6f7fef65.js" rel="prefetch"><link href="js/chunk-10db6867.0854e7b1.js" rel="prefetch"><link href="js/chunk-380f6b67.557dacdc.js" rel="prefetch"><link href="js/chunk-9fe5b1fa.ae27ecdf.js" rel="prefetch"><link href="css/app.1556b3d8.css" rel="preload" as="style"><link href="js/app.2191268e.js" rel="modulepreload" as="script"><link href="js/chunk-vendors.b2e81810.js" rel="modulepreload" as="script"><link href="css/app.1556b3d8.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div class="pre-render-login-c"><div class="pre-render-banner"></div><div class="pre-render-login-cc"><div class="pre-render-sawa-logo"></div><div class="pre-render-message" dir="auto">تسجيل دخول بإستخدام حساب Sawa والدردشة مع الأصدقاء</div><div class="pre-render-btn apple-btn"><div class="btn-text">Sign in width Apple</div><div class="btn-icon"></div></div><div class="pre-render-btn google-btn"><div class="btn-text">Google</div><div class="btn-icon"></div></div><div class="pre-render-btn facebook-btn"><div class="btn-text">Facebook</div><div class="btn-icon"></div></div><div class="pre-render-btn phone-btn"><div class="btn-text">Mobile Phone</div><div class="btn-icon"></div></div><div class="pre-render-policy">بالضغط على تسجيل الدخول ، فإنك توافق على الالتزام بـ <a href="https://isawa.badambiz.com/html/user_agreement_ksa.html" class="a">شروط الخدمة</a> و <a href="https://isawa.badambiz.com/html/privacy_policy_ksa.html" class="a">سياسة الخصوصية</a> في Sawa</div></div></div></div><script>var bundle_id = getQueryVariable('bundle_id')
+
+      if (bundle_id === 'com.sawa.ludo') {
+        document.documentElement.classList.add('-pre-render-ludo')
+      }
+
+      if (isOverWH(0.66)) {
+        document.documentElement.classList.add('-pre-render-min')
+      }
+      if (isOverWH(0.75)) {
+        document.documentElement.classList.add('-pre-render-min2')
+      }</script><script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script><script type="module" src="js/chunk-vendors.b2e81810.js"></script><script type="module" src="js/app.2191268e.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script src="js/chunk-vendors-legacy.1dbdcaf9.js" nomodule></script><script src="js/app-legacy.bbd60fe3.js" nomodule></script></body></html>
